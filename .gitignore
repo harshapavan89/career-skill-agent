@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# Streamlit Secrets
+.streamlit/secrets.toml
+
+# Environment Files
+.env
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
