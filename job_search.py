@@ -12,7 +12,7 @@ def search_jobs(skill: str, location: str) -> list:
     }
 
     headers = {
-        "x-rapidapi-key": st.secrets["RAPID_API_KEY"],
+        "x-rapidapi-key": st.secrets.get("RAPID_API_KEY"),
         "x-rapidapi-host": "jsearch.p.rapidapi.com"
     }
 
