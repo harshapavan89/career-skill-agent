@@ -12,7 +12,7 @@ import streamlit as st
 skill_demand_tool = TavilySearch(
     max_results=5,
     search_depth="advanced",
-    tavily_api_key=st.secrets["TAVILY_API_KEY"]
+    tavily_api_key=st.secrets.get("TAVILY_API_KEY")
 )
 
 
@@ -32,7 +32,7 @@ def search_jobs(skill: str, location: str) -> list:
     url = "https://jsearch.p.rapidapi.com/search"
 
     headers = {
-        "x-rapidapi-key": st.secrets["RAPID_API_KEY"],
+        "x-rapidapi-key": st.secrets.get("RAPID_API_KEY"),
         "x-rapidapi-host": "jsearch.p.rapidapi.com"
     }
 
